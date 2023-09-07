@@ -13,15 +13,7 @@
     "check-format": "prettier --check \"**/*.{ts,tsx,md}\""
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@mantine/core": "^6.0.20",
-    "@mantine/dates": "^6.0.20",
-    "@mantine/form": "^6.0.20",
-    "@mantine/hooks": "^6.0.20",
-    "@mantine/modals": "^6.0.20",
-    "@mantine/notifications": "^6.0.20",
-    "@mantine/nprogress": "^6.0.20",
-    "dayjs": "^1.11.9",
+    "@material-tailwind/react": "^2.1.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "prettier": "^3.0.3",
@@ -38,10 +30,13 @@
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
+    "autoprefixer": "^10.4.15",
     "eslint": "^8.48.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.0",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2",
     "vite": "^4.4.9"
   }

@@ -1,31 +1,95 @@
+import { Radio } from '@material-tailwind/react'
 import { CustomButton } from '../../components/CustomButton'
+import { CustomInput } from '../../components/CustomInput'
 
 export function RequestPass() {
   return (
     <section className="w-full h-screen">
       <div className="flex">
         <div className="h-screen sm:w-10 bg-[#4D4D29] sm:p-[130px]" />
-        <div className="flex sm:gap-[440px] sm:m-7">
-          <div className="flex gap-4">
-            <a href="#">
-              <CustomButton
-                title="Current Request"
-                color="bg-[#F6F6F6]"
-                fillColor="black"
-              />
-            </a>
-            <a href="#">
-              <CustomButton
-                title="Pass History"
-                color="bg-[#F6F6F6]"
-                fillColor="black"
-              />
-            </a>
+        <div className="sm:m-7">
+          <div className="flex sm:gap-[440px]">
+            <div className="flex gap-4">
+              <a href="#">
+                <CustomButton
+                  title="Current Request"
+                  color="bg-[#F6F6F6]"
+                  fillColor="black"
+                />
+              </a>
+              <a href="#">
+                <CustomButton
+                  title="Pass History"
+                  color="bg-[#F6F6F6]"
+                  fillColor="black"
+                />
+              </a>
+            </div>
+            <div className="">
+              <a href="#">
+                <CustomButton
+                  title="Request Pass"
+                  color="bg-[#4D4D29] text-white"
+                  fillColor="white"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="my-7">
+            <h4 className="font-semibold">Outpass Type</h4>
+            <Radio
+              required
+              label={<span className="font-semibold">Home</span>}
+              name="type"
+              ripple={true}
+              crossOrigin={undefined}
+            />
+            <Radio
+              required
+              label={<span className="font-semibold">General</span>}
+              name="type"
+              ripple={true}
+              crossOrigin={undefined}
+            />
+          </div>
+          <div className="my-7">
+            <div className="flex">
+              <div className="">
+                <h4 className="font-semibold pb-2">Out-date</h4>
+                <CustomInput
+                  label="Date"
+                  type="date"
+                  placeholder="dd/mm/yyyy"
+                />
+              </div>
+              <div className="">
+                <h4 className="font-semibold pb-2">In-date</h4>
+                <CustomInput
+                  label="Date"
+                  type="date"
+                  placeholder="dd/mm/yyyy"
+                />
+              </div>
+            </div>
+            <div className="flex mt-10">
+              <div className="">
+                <h4 className="font-semibold pb-2">Out Time</h4>
+                <CustomInput label="Time" type="time" placeholder="_ _ : _ _" />
+              </div>
+              <div className="">
+                <h4 className="font-semibold pb-2">In Time</h4>
+                <CustomInput label="Time" type="time" placeholder="_ _ : _ _" />
+              </div>
+            </div>
+            <div className="my-7">
+              <h4 className="font-semibold pb-2">Place</h4>
+              <CustomInput type="text" label="Place" containerStyle="" />
+            </div>
           </div>
           <div className="">
             <a href="#">
               <CustomButton
-                title="Request Pass"
+                title="Send"
                 color="bg-[#4D4D29] text-white"
                 fillColor="white"
               />

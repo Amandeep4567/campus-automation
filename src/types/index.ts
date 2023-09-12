@@ -10,3 +10,8 @@ export interface CustomInputProps {
   label?: string
   containerStyle?: string
 }
+
+export interface CustomButtonWithoutIconProps {
+  title: string
+  style: string
+}

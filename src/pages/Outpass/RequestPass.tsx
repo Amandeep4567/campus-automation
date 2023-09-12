@@ -37,24 +37,30 @@ export function RequestPass() {
           </div>
           <div className="my-7">
             <h4 className="font-semibold">Outpass Type</h4>
-            <Radio
-              required
-              label={<span className="font-semibold">Home</span>}
-              name="type"
-              ripple={true}
-              crossOrigin={undefined}
-            />
-            <Radio
-              required
-              label={<span className="font-semibold">General</span>}
-              name="type"
-              ripple={true}
-              crossOrigin={undefined}
-            />
+            <div className="flex">
+              <div className="pr-6">
+                <Radio
+                  required
+                  label={<span className="font-semibold">Home</span>}
+                  name="type"
+                  ripple={true}
+                  crossOrigin={undefined}
+                />
+              </div>
+              <div className="pl-6">
+                <Radio
+                  required
+                  label={<span className="font-semibold">General</span>}
+                  name="type"
+                  ripple={true}
+                  crossOrigin={undefined}
+                />
+              </div>
+            </div>
           </div>
           <div className="my-7">
             <div className="flex">
-              <div className="">
+              <div className="pr-6">
                 <h4 className="font-semibold pb-2">Out-date</h4>
                 <CustomInput
                   label="Date"
@@ -62,7 +68,7 @@ export function RequestPass() {
                   placeholder="dd/mm/yyyy"
                 />
               </div>
-              <div className="">
+              <div className="pl-6">
                 <h4 className="font-semibold pb-2">In-date</h4>
                 <CustomInput
                   label="Date"
@@ -72,11 +78,11 @@ export function RequestPass() {
               </div>
             </div>
             <div className="flex mt-10">
-              <div className="">
+              <div className="pr-6">
                 <h4 className="font-semibold pb-2">Out Time</h4>
                 <CustomInput label="Time" type="time" placeholder="_ _ : _ _" />
               </div>
-              <div className="">
+              <div className="pl-6">
                 <h4 className="font-semibold pb-2">In Time</h4>
                 <CustomInput label="Time" type="time" placeholder="_ _ : _ _" />
               </div>
@@ -86,7 +92,7 @@ export function RequestPass() {
               <CustomInput type="text" label="Place" containerStyle="" />
             </div>
           </div>
-          <div className="">
+          <div className="flex">
             <a href="#">
               <CustomButton
                 title="Send"

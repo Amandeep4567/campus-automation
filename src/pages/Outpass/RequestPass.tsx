@@ -1,12 +1,13 @@
 import { Radio } from '@material-tailwind/react'
 import { CustomButton } from '../../components/CustomButton'
 import { CustomInput } from '../../components/CustomInput'
+import { Sidebar } from '../../components/common/Sidebar'
 
 export function RequestPass() {
   return (
     <section className="w-full h-screen">
       <div className="flex">
-        <div className="h-screen sm:w-10 bg-[#4D4D29] sm:p-[130px]" />
+        <Sidebar />
         <div className="sm:m-7">
           <div className="flex sm:gap-[440px]">
             <div className="flex gap-4">

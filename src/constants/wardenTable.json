@@ -1,0 +1,93 @@
+[
+    {
+      "outpassId": "OP001",
+      "place": "Museum",
+      "outDate": "2023-10-01",
+      "inDate": "2023-10-01",
+      "outTime": "10:00 AM",
+      "inTime": "03:00 PM",
+      "outingType": "Education"
+    },
+    {
+      "outpassId": "OP002",
+      "place": "Beach",
+      "outDate": "2023-10-02",
+      "inDate": "2023-10-02",
+      "outTime": "11:30 AM",
+      "inTime": "06:00 PM",
+      "outingType": "Leisure"
+    },
+    {
+      "outpassId": "OP003",
+      "place": "Zoo",
+      "outDate": "2023-10-03",
+      "inDate": "2023-10-03",
+      "outTime": "09:00 AM",
+      "inTime": "04:00 PM",
+      "outingType": "Family"
+    },
+    {
+      "outpassId": "OP004",
+      "place": "Shopping Mall",
+      "outDate": "2023-10-04",
+      "inDate": "2023-10-04",
+      "outTime": "02:00 PM",
+      "inTime": "08:00 PM",
+      "outingType": "Retail Therapy"
+    },
+    {
+      "outpassId": "OP005",
+      "place": "Mountain Hike",
+      "outDate": "2023-10-05",
+      "inDate": "2023-10-05",
+      "outTime": "07:00 AM",
+      "inTime": "05:00 PM",
+      "outingType": "Adventure"
+    },
+    {
+      "outpassId": "OP006",
+      "place": "Restaurant",
+      "outDate": "2023-10-06",
+      "inDate": "2023-10-06",
+      "outTime": "08:00 PM",
+      "inTime": "11:00 PM",
+      "outingType": "Dining"
+    },
+    {
+      "outpassId": "OP007",
+      "place": "Concert",
+      "outDate": "2023-10-07",
+      "inDate": "2023-10-07",
+      "outTime": "06:30 PM",
+      "inTime": "10:00 PM",
+      "outingType": "Entertainment"
+    },
+    {
+      "outpassId": "OP008",
+      "place": "Amusement Park",
+      "outDate": "2023-10-08",
+      "inDate": "2023-10-08",
+      "outTime": "11:00 AM",
+      "inTime": "07:00 PM",
+      "outingType": "Fun"
+    },
+    {
+      "outpassId": "OP009",
+      "place": "Library",
+      "outDate": "2023-10-09",
+      "inDate": "2023-10-09",
+      "outTime": "10:30 AM",
+      "inTime": "04:30 PM",
+      "outingType": "Study"
+    },
+    {
+      "outpassId": "OP010",
+      "place": "Camping Site",
+      "outDate": "2023-10-10",
+      "inDate": "2023-10-10",
+      "outTime": "03:00 PM",
+      "inTime": "10:00 AM",
+      "outingType": "Nature"
+    }
+  ]
+  

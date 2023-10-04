@@ -1,8 +1,13 @@
 import { Button } from '@material-tailwind/react'
+import { useNavigate } from 'react-router-dom'
 import { CustomButtonWithoutIcon } from '../../components/CustomButtonWithoutIcon'
 import { CustomInput } from '../../components/CustomInput'
 
 export function Login() {
+  const navigate = useNavigate()
+  const navigated = () => {
+    navigate('/outpass')
+  }
   return (
     <div className="w-full flex flex-row h-screen items-center justify-center">
       <div className="xl:w-[70%] w-0 sm:w-[50%] h-full">
@@ -15,9 +20,11 @@ export function Login() {
           <CustomInput type="password" label="Password" />
         </div>
         <div className="">
-          <CustomButtonWithoutIcon title="LOGIN" style="bg-[#4D4D29]" />
+          <a href="#" onClick={navigated}>
+            <CustomButtonWithoutIcon title="LOGIN" style="bg-[#4D4D29]" />
+          </a>
         </div>
-        <div className="">
+        <div className=" mt-4">
           <Button
             size="lg"
             variant="outlined"

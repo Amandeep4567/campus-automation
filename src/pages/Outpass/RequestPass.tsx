@@ -4,6 +4,7 @@ import { Form } from 'react-router-dom'
 import { CustomButton } from '../../components/CustomButton'
 import { CustomInput } from '../../components/CustomInput'
 import { PassHistory } from './PassHistory'
+import { Sidebar } from '../../components/common/Sidebar'
 
 export function RequestPass() {
   const [formSubmitted, setFormSubmitted] = useState(false)
@@ -53,6 +54,69 @@ export function RequestPass() {
                     fillColor="black"
                   />
                 </a>
+    <section className="w-full h-screen">
+      <div className="flex">
+        <Sidebar />
+        <div className="sm:m-7">
+          <div className="flex sm:gap-[440px]">
+            <div className="flex gap-4">
+              <a href="#">
+                <CustomButton
+                  title="Current Request"
+                  color="bg-[#F6F6F6]"
+                  fillColor="black"
+                />
+              </a>
+              <a href="#">
+                <CustomButton
+                  title="Pass History"
+                  color="bg-[#F6F6F6]"
+                  fillColor="black"
+                />
+              </a>
+            </div>
+            <div className="">
+              <a href="#">
+                <CustomButton
+                  title="Request Pass"
+                  color="bg-[#4D4D29] text-white"
+                  fillColor="white"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="my-7">
+            <h4 className="font-semibold">Outpass Type</h4>
+            <div className="flex">
+              <div className="pr-6">
+                <Radio
+                  required
+                  label={<span className="font-semibold">Home</span>}
+                  name="type"
+                  ripple={true}
+                  crossOrigin={undefined}
+                />
+              </div>
+              <div className="pl-6">
+                <Radio
+                  required
+                  label={<span className="font-semibold">General</span>}
+                  name="type"
+                  ripple={true}
+                  crossOrigin={undefined}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="my-7">
+            <div className="flex">
+              <div className="pr-6">
+                <h4 className="font-semibold pb-2">Out-date</h4>
+                <CustomInput
+                  label="Date"
+                  type="date"
+                  placeholder="dd/mm/yyyy"
+                />
               </div>
               <div className="">
                 <a href="#">

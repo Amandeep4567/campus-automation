@@ -1,6 +1,14 @@
+import { Button } from '@material-tailwind/react'
+import { useNavigate } from 'react-router-dom'
+import { CustomButtonWithoutIcon } from '../../components/CustomButtonWithoutIcon'
+import { CustomInput } from '../../components/CustomInput'
 import { FcGoogle } from 'react-icons/fc'
 
 export function Login() {
+  const navigate = useNavigate()
+  const navigated = () => {
+    navigate('/outpass')
+  }
   return (
     <div className="w-full flex flex-row h-screen">
       <div className="xl:w-3/5 w-0 sm:w-1/2 h-full relative">

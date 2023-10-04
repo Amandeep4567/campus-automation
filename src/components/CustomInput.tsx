@@ -6,9 +6,10 @@ export function CustomInput({
   placeholder,
   label,
   containerStyle,
+  onChange,
 }: CustomInputProps) {
   return (
-    <section className="">
+    <section>
       <Input
         required
         type={type}
@@ -16,6 +17,7 @@ export function CustomInput({
         placeholder={placeholder}
         className={`${containerStyle}`}
         crossOrigin={undefined}
+        onChange={onChange}
       />
     </section>
   )

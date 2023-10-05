@@ -1,8 +1,5 @@
-import { Button } from '@material-tailwind/react'
-import { useNavigate } from 'react-router-dom'
-import { CustomButtonWithoutIcon } from '../../components/CustomButtonWithoutIcon'
-import { CustomInput } from '../../components/CustomInput'
 import { FcGoogle } from 'react-icons/fc'
+import { useNavigate } from 'react-router-dom'
 
 export function Login() {
   const navigate = useNavigate()

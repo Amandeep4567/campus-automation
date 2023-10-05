@@ -1,9 +1,19 @@
 import { Button } from '@material-tailwind/react'
 import { CustomButtonProps } from '../types'
 
-export function CustomButton({ title, color, fillColor }: CustomButtonProps) {
+export function CustomButton({
+  title,
+  color,
+  fillColor,
+  onClick,
+  active,
+}: CustomButtonProps) {
   return (
-    <Button variant="outlined" className={`flex items-center gap-3 ${color}`}>
+    <Button
+      onClick={onClick}
+      variant="outlined"
+      className={`flex items-center gap-3 ${color} ${active ? 'active' : ''}`}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

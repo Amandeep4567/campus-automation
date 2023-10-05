@@ -5,6 +5,7 @@ export interface CustomButtonProps {
   color: string
   fillColor: string
   onClick?: () => void
+  active?: string | boolean
 }
 
 export interface CustomInputProps {
@@ -18,4 +19,10 @@ export interface CustomInputProps {
 export interface CustomButtonWithoutIconProps {
   title: string
   style: string
+}
+
+export interface NavbarProps {
+  onCurrentRequest: () => void
+  onPassHistory: () => void
+  activeButton: string
 }
